@@ -4,6 +4,7 @@ describe('file upload use cases', () => {
         cy.visit('http://automationpractice.com/index.php?controller=contact')
         const yourFixturePath = 'image1.jpeg';
         cy.get('#fileUpload').attachFile(yourFixturePath)
+        //test
     //     const special = 'file.spss';
     //     cy.fixture(yourFixturePath, 'binary')
     //     .then(Cypress.Blob.binaryStringToBlob)
