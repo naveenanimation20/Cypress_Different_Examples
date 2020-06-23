@@ -1,0 +1,16 @@
+{
+  "name": "cypress-practice",
+  "version": "1.0.0",
+  "description": "this is for cypress practice",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Naveen Khunteta",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^4.8.0",
+    "cypress-file-upload": "^4.0.7"
+  }
+}
