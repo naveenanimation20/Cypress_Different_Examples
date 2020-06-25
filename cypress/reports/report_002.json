@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-06-25T11:38:12.959Z",
+    "end": "2020-06-25T11:38:35.206Z",
+    "duration": 22247,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "cb6858ab-f00e-40cc-86ba-9c359385c85c",
+      "title": "",
+      "fullFile": "cypress/integration/sampletests/automationPractice_test.js",
+      "file": "cypress/integration/sampletests/automationPractice_test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6cc28fe8-446e-473e-b285-bac2264c01a1",
+          "title": "automation practice features testing",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should login",
+              "fullTitle": "automation practice features testing should login",
+              "timedOut": null,
+              "duration": 11847,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.url().should('include', 'controller=my-account');\ncy.get('.myaccount-link-list a').should('have.length', 5);",
+              "err": {},
+              "uuid": "84de847f-06d1-48e3-9f1a-85c55bb6d206",
+              "parentUUID": "6cc28fe8-446e-473e-b285-bac2264c01a1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should navigate to home page",
+              "fullTitle": "automation practice features testing should navigate to home page",
+              "timedOut": null,
+              "duration": 3432,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.icon-chevron-left').last().click().url().should('include', 'index.php');",
+              "err": {},
+              "uuid": "94eabada-2772-4689-b243-79f9d10d841f",
+              "parentUUID": "6cc28fe8-446e-473e-b285-bac2264c01a1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should search",
+              "fullTitle": "automation practice features testing should search",
+              "timedOut": null,
+              "duration": 2991,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.search('Dress');\ncy.get('.lighter').should('contain.text', 'Dress');",
+              "err": {},
+              "uuid": "0dbda6ab-6b74-4098-9c7e-e5a7236ecfcf",
+              "parentUUID": "6cc28fe8-446e-473e-b285-bac2264c01a1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "84de847f-06d1-48e3-9f1a-85c55bb6d206",
+            "94eabada-2772-4689-b243-79f9d10d841f",
+            "0dbda6ab-6b74-4098-9c7e-e5a7236ecfcf"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 18270,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFilename": "report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

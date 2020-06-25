@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-06-25T11:37:54.138Z",
+    "end": "2020-06-25T11:38:00.614Z",
+    "duration": 6476,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b429b87d-b31c-45e7-9169-032262ab0485",
+      "title": "",
+      "fullFile": "cypress/integration/sampletests/amazon_search.js",
+      "file": "cypress/integration/sampletests/amazon_search.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1a20d75a-5d6c-4eb1-98db-5b8de95286c8",
+          "title": "Amazon Search App ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "search test",
+              "fullTitle": "Amazon Search App  search test",
+              "timedOut": null,
+              "duration": 4311,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.amazon.in/');\ncy.get('.nav-search-field ').within(function () {\n  cy.get('#twotabsearchtextbox').type('Apple Mac Book Laptop');\n});",
+              "err": {},
+              "uuid": "84a9421d-6c05-46e3-87f6-4d484c6a70aa",
+              "parentUUID": "1a20d75a-5d6c-4eb1-98db-5b8de95286c8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "84a9421d-6c05-46e3-87f6-4d484c6a70aa"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4311,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFilename": "report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

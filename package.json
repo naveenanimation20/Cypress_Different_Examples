@@ -5,12 +5,16 @@
   "main": "index.js",
   "scripts": {
     "cypress:open": "cypress open",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "merge":"mochawesome-merge cypress/reports/*.json > cypress/reports/output.json",
+    "generate_mochawesome_report": "marge cypress/reports/output.json --reportDir ./ --inline",
+    "final_report": "npm run merge && npm run generate_mochawesome_report"
   },
   "author": "Naveen Khunteta",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^4.8.0",
-    "cypress-file-upload": "^4.0.7"
+    "cypress-file-upload": "^4.0.7",
+    "mochawesome": "^6.1.1",
+    "mochawesome-merge": "^4.1.0"
   }
 }

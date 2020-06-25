@@ -1,0 +1,165 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 2,
+    "pending": 2,
+    "failures": 0,
+    "start": "2020-06-25T11:39:24.531Z",
+    "end": "2020-06-25T11:39:59.523Z",
+    "duration": 34992,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 50,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e6eccdf2-4d5f-45bc-87eb-c0b3a767facd",
+      "title": "",
+      "fullFile": "cypress/integration/sampletests/dropdown_test.js",
+      "file": "cypress/integration/sampletests/dropdown_test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "47793741-bf3f-4560-9bc0-3be102036687",
+          "title": "drop down feature",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "with Select tag test",
+              "fullTitle": "drop down feature with Select tag test",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "90ea63ac-0e1d-45d2-98a1-c7c2b130af21",
+              "parentUUID": "47793741-bf3f-4560-9bc0-3be102036687",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Google Search Test",
+              "fullTitle": "drop down feature Google Search Test",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "c19c8ee9-ac17-4842-9bbf-5addbda4f473",
+              "parentUUID": "47793741-bf3f-4560-9bc0-3be102036687",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "automation Ecomm Search Test",
+              "fullTitle": "drop down feature automation Ecomm Search Test",
+              "timedOut": null,
+              "duration": 19539,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://automationpractice.com/index.php'); // cy.get('#search_query_top').type('dress')\n// cy.get('.ac_results')\n// .find('li')\n// .contains('T-shirts').click()\n//cy.get('.erkvQe li span').contains('cypress tutorial').click()\ncy.get('.ajax_add_to_cart_button').first().click(); //Close modal which confirms that product has been added.\ncy.get('.cross').click();\ncy.wait(5000); //Get drop-down cart block and verify if by default it is hidden.\n//Force the drop-down block to be visible by invoke('show').\ncy.get('.cart_block').should('be.hidden').invoke('show');\ncy.wait(3000); //Click on check out button.\ncy.get('#button_order_cart').click(); //Assert redirection to new url.\ncy.url().should('include', 'controller=order');",
+              "err": {},
+              "uuid": "a9e46083-93a3-490c-9da3-4c187dd21e4d",
+              "parentUUID": "47793741-bf3f-4560-9bc0-3be102036687",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "mouse hover",
+              "fullTitle": "drop down feature mouse hover",
+              "timedOut": null,
+              "duration": 10026,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.spicejet.com/');\ncy.contains('Login / Signup').trigger('mouseover');\ncy.contains('SpiceClub Members').trigger('mouseover');\ncy.contains('Sign up').click();",
+              "err": {},
+              "uuid": "6e044a76-cff6-4fd2-bc6b-a9555510d6d0",
+              "parentUUID": "47793741-bf3f-4560-9bc0-3be102036687",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a9e46083-93a3-490c-9da3-4c187dd21e4d",
+            "6e044a76-cff6-4fd2-bc6b-a9555510d6d0"
+          ],
+          "failures": [],
+          "pending": [
+            "90ea63ac-0e1d-45d2-98a1-c7c2b130af21",
+            "c19c8ee9-ac17-4842-9bbf-5addbda4f473"
+          ],
+          "skipped": [],
+          "duration": 29565,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFilename": "report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}
