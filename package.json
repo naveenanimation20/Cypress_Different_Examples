@@ -12,7 +12,7 @@
   "author": "Naveen Khunteta",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^4.8.0",
+    "cypress": "^4.12.1",
     "cypress-file-upload": "^4.0.7",
     "mochawesome": "^6.1.1",
     "mochawesome-merge": "^4.1.0"
